@@ -5,14 +5,14 @@ with open('README.md') as readme_file:
 
 
 setuptools.setup(
-    name="streamlit-card",
-    version="0.0.4",
-    author="gamcoh",
-    author_email="cohengamliel8@gmail.com",
-    description="A streamlit component, to make UI cards",
+    name="streamlit-cardv2",
+    version="0.0.1",
+    author="fabianandresgrob",
+    author_email="grobfab@gmail.com",
+    description="A streamlit UI card component in its second version",
     long_description=readme,
     long_description_content_type="text/markdown",
-    url="https://github.com/gamcoh/st-card",
+    url="https://github.com/fabianandresgrob/st-card",
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[

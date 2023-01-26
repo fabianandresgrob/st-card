@@ -3,8 +3,8 @@ from typing import Optional
 
 import streamlit.components.v1 as components
 
-_RELEASE = True
-COMPONENT_NAME = "streamlit_card"
+_RELEASE = False
+COMPONENT_NAME = "streamlit_cardv2"
 
 if _RELEASE:  # use the build instead of development if release is true
     root_dir = os.path.dirname(os.path.abspath(__file__))

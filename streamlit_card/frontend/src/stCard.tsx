@@ -73,7 +73,7 @@ class Card extends StreamlitComponentBase {
       zIndex: "2",
       fontSize: "2em",
       fontWeight: "bolder",
-      text-align: "left",
+      textAlign: "left",
     });
 
     const Text = styled.p({
@@ -81,7 +81,7 @@ class Card extends StreamlitComponentBase {
       fontWeight: "bolder",
       zIndex: "2",
       fontSize: "1em",
-      text-align: "left",
+      textAlign: "left",
     });
 
     const Filter = styled.div({
