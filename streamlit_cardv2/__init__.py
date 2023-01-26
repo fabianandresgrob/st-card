@@ -3,7 +3,7 @@ from typing import Optional
 
 import streamlit.components.v1 as components
 
-_RELEASE = False
+_RELEASE = True
 COMPONENT_NAME = "streamlit_cardv2"
 
 if _RELEASE:  # use the build instead of development if release is true
