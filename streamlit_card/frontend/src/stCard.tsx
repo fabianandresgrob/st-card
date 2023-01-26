@@ -16,7 +16,7 @@ class Card extends StreamlitComponentBase {
   }
 
   public render = (): ReactNode => {
-    const { title, text, image } = this.props.args;
+    const { title, text, image, height, width, text_color, bg_color, margin } = this.props.args;
 
     // Streamlit sends us a theme object via props that we can use to ensure
     // that our component has visuals that match the active theme in a
@@ -29,10 +29,6 @@ class Card extends StreamlitComponentBase {
       return <div>Theme is undefined, please check streamlit version.</div>;
     }
 
-    const height = 250;
-    const width = 300;
-    const margin = 40;
-
     const Card = styled.div(
       {
         display: "flex",
@@ -41,11 +37,10 @@ class Card extends StreamlitComponentBase {
         height: `${height}px`,
         borderRadius: "20px",
         overflow: "hidden",
-        backgroundImage: `url(${image})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundColor: "#eee",
+        backgroundColor: `${bg_color}`,
         boxShadow: "0px 0px 40px rgba(0, 0, 0, 0.2)",
         margin: `${margin}px`,
         flexDirection: "column",
@@ -74,17 +69,19 @@ class Card extends StreamlitComponentBase {
     });
 
     const Title = styled.h2({
-      color: "white",
+      color: `${text_color}`,
       zIndex: "2",
       fontSize: "2em",
       fontWeight: "bolder",
+      text-align: "left",
     });
 
     const Text = styled.p({
-      color: "white",
+      color: `${text_color}`,
       fontWeight: "bolder",
       zIndex: "2",
       fontSize: "1em",
+      text-align: "left",
     });
 
     const Filter = styled.div({
