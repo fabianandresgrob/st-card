@@ -6,7 +6,7 @@ with open('README.md') as readme_file:
 
 setuptools.setup(
     name="streamlit-cardv2",
-    version="0.0.1",
+    version="1.0.0",
     author="fabianandresgrob",
     author_email="grobfab@gmail.com",
     description="A streamlit UI card component in its second version",
